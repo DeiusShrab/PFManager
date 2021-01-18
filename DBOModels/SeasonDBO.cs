@@ -5,15 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PFManager.Models
+namespace PFManager.DBOModels
 {
-  public class Campaign
+  public class SeasonDBO
   {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string Id { get; set; }
     public string Name { get; set; }
-    public string Notes { get; set; }
-    public bool IsActive { get; set; }
   }
 }
